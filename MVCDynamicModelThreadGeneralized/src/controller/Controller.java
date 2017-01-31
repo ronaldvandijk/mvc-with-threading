@@ -5,6 +5,7 @@ import model.*;
 import java.awt.event.*;
 
 public class Controller extends AbstractController {
+	
 	public Controller(Model model) {
 		super(model);		
 	}
