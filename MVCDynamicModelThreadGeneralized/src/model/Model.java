@@ -16,6 +16,8 @@ public class Model extends AbstractModel implements Runnable {
 			this.aantal=aantal;
 			notifyObservers();
 		}
+		
+		//if(aantal==360) this.aantal = 0;
 	}
 	
 	public void start() {
@@ -24,6 +26,10 @@ public class Model extends AbstractModel implements Runnable {
 	
 	public void stop() {
 		run=false;
+	}
+	
+	public void reset(){
+		setAantal(0);
 	}
 	
 	@Override

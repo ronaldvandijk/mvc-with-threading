@@ -6,19 +6,27 @@ import model.*;
 
 public abstract class AbstractDisplayPane extends JPanel implements Observer {
 	private static final long serialVersionUID = -2767764579227738552L;
-	private AbstractModel observable;
+	private static AbstractModel observable; // in this application all Panes use the same model.
+
+	public static AbstractModel getObservable() {
+		return observable;
+	}
+
+	public static void setObservable(AbstractModel observable) {
+		AbstractDisplayPane.observable = observable;
+	}
 
 	public AbstractDisplayPane(AbstractModel observable) {
 		observe(observable);
 	}
 	
 	public void observe(AbstractModel observable){
-		this.observable=observable;
-		observable.registerObserver(this);
+		setObservable(observable);
+		getObservable().registerObserver(this);
 	}
 	
 	public Model getModel() {
-		return (Model) observable;
+		return (Model) getObservable();
 	}
 	
 	public void updateView() {
