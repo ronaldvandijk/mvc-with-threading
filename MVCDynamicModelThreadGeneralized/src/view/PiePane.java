@@ -4,10 +4,10 @@ import java.awt.*;
 
 import model.*;
 
-public class PieView extends AbstractView {
+public class PiePane extends AbstractDisplayPane {
 	private static final long serialVersionUID = 5455934187803194147L;
 
-	public PieView(Model model) {
+	public PiePane(Model model) {
 		super(model);
 		setSize(200, 200);
 	}

@@ -4,10 +4,10 @@ import java.awt.*;
 
 import model.*;
 
-public class CountView extends AbstractView {
+public class CountPane extends AbstractDisplayPane {
 	private static final long serialVersionUID = -7503377039578042533L;
 
-	public CountView(Model model) {
+	public CountPane(Model model) {
 		super(model);
 		setSize(200, 200);
 	}
