@@ -11,10 +11,10 @@ public class MVCDDynamicModelThreadGeneralized {
 	private Controller controller;
 	
 	public MVCDDynamicModelThreadGeneralized() {
-		model=new Model();
-		controller=new Controller(model);
-		countpane=new CountPane(model);
-		piepane=new PiePane(model);
+		model      = new Model();
+		controller = new Controller(model);
+		countpane  = new CountPane(model);
+		piepane    = new PiePane(model);
 		
 	    new MainWindow(countpane, piepane, controller);
 		

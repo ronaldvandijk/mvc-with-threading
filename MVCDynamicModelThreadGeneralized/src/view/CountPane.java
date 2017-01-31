@@ -21,11 +21,12 @@ public class CountPane extends AbstractDisplayPane {
 		g.fillRect(0, 0, 200, 200);
 		g.setColor(Color.RED);
 		
-		for(int y=70;y<=180 && !ready; y+=5) {
-			for(int x=20;x<=180 && !ready; x+=5) {
+		for(int y=20;y<180 && !ready; y+=5) {
+			for(int x=20;x<170 && !ready; x+=5) {
 				ready=counter>aantal;
-				if (!ready) g.fillRect(x, y, 4, 4);
 				counter++;
+				if (!ready) g.fillRect(x, y, 4, 4);
+				
 			}
 		}
 	}

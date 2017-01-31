@@ -16,8 +16,6 @@ public class Model extends AbstractModel implements Runnable {
 			this.aantal=aantal;
 			notifyObservers();
 		}
-		
-		//if(aantal==360) this.aantal = 0;
 	}
 	
 	public void start() {
@@ -37,6 +35,7 @@ public class Model extends AbstractModel implements Runnable {
 		run=true;
 		while(run) {
 			setAantal(getAantal()+1);
+			if (getAantal()==360) run=false;
 			try {
 				Thread.sleep(10);
 			} catch (Exception e) {} 
