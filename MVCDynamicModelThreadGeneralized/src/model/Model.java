@@ -8,7 +8,7 @@ package model;
  * a result the GUI of the application remains responsive during run.
  *   
  * @author ronaldvandijk
- * @date 01-02-2017
+ * @version 01-02-2017
  */
 public class Model extends AbstractModel implements Runnable {
 	private int amount;
@@ -30,7 +30,7 @@ public class Model extends AbstractModel implements Runnable {
 	 * integer number between 0 and 360. Upon change the observers
 	 * are notified.
 	 * 
-	 * @param amount
+	 * @param amount the amount to set. A value between 0 and 360 (including)
 	 */
 	public void setAmount(int amount) {
 		if (amount>=0 && amount <=360) {
