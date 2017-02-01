@@ -13,7 +13,7 @@ public class PiePane extends AbstractDisplayPane {
 	}
 
 	public void paintComponent(Graphics g) {
-		int aantal=getModel().getAantal();
+		int aantal=getModel().getCount();
 		g.setColor(Color.WHITE);
 		g.fillRect(0, 0, 200, 200);
 		g.setColor(Color.BLUE);

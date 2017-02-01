@@ -14,11 +14,11 @@ public class Controller extends AbstractController {
 		
 		
 		if (e.getActionCommand().equals("-1")) {
-			model.setAantal(model.getAantal()-1);
+			model.setAmount(model.getAmount()-1);
 		}
 		
 		if (e.getActionCommand().equals("+1")) {
-			model.setAantal(model.getAantal()+1);
+			model.setAmount(model.getAmount()+1);
 		}
 		
 		if (e.getActionCommand().equals("Start")) {

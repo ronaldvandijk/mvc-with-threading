@@ -13,7 +13,7 @@ public class CountPane extends AbstractDisplayPane {
 	}
 	
 	public void paintComponent(Graphics g) {
-		int aantal=getModel().getAantal();
+		int aantal=getModel().getCount();
 		boolean ready=false;
 		int counter=1;
 		
