@@ -13,7 +13,7 @@ public class CountPane extends AbstractDisplayPane {
 	}
 	
 	public void paintComponent(Graphics g) {
-		int aantal=getModel().getCount();
+		int amount=getModel().getAmount();
 		boolean ready=false;
 		int counter=1;
 		
@@ -23,7 +23,7 @@ public class CountPane extends AbstractDisplayPane {
 		
 		for(int y=20;y<180 && !ready; y+=5) {
 			for(int x=20;x<170 && !ready; x+=5) {
-				ready=counter>aantal;
+				ready=counter>amount;
 				counter++;
 				if (!ready) g.fillRect(x, y, 4, 4);
 				
