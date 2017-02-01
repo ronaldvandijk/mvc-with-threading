@@ -31,7 +31,7 @@ public abstract class AbstractModel implements Observable {
 	 */
 	public void notifyObservers() {
 		for(Observer o: this.observers) {
-			o.update(this); 
+			o.update(); 
 			};
 	}
 }
