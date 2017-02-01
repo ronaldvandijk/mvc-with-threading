@@ -24,7 +24,9 @@ public class Controller extends AbstractController {
 	
 	/**
 	 * Implementation for the actionPerformed method that
-	 * this class has to provide. 
+	 * this class has to provide. Currently the method figures
+	 * out which actionevent was triggered and initiates the 
+	 * steps to be taken.
 	 * 
 	 * @param e the actionEvent that is given to the controller.
 	 */
