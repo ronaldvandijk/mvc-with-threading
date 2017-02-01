@@ -2,12 +2,19 @@ package view;
 
 import java.awt.FlowLayout;
 
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 import controller.Controller;
-
+/**
+ * The MainWindow class sets-up the GUI elements for the application.
+ * Two panes display the current state of the model, and some control-
+ * elements to manipulate the model are displayed.
+ * @author ronaldvandijk
+ *
+ */
 public class MainWindow {
 	private JFrame mainwindow;
 	private JPanel buttonpane;
@@ -15,6 +22,11 @@ public class MainWindow {
 	public MainWindow(AbstractDisplayPane leftpane, AbstractDisplayPane rightpane, Controller controller){
 		
 		mainwindow=new JFrame("Model View Controller/Dynamic Model with thread");
+		mainwindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		ImageIcon icon = new ImageIcon("./src/images/icon.png");
+		mainwindow.setIconImage(icon.getImage());
+		
+		
 		mainwindow.setSize(450, 285);
 		mainwindow.setResizable(false);
 		mainwindow.setLayout(null);
@@ -54,7 +66,7 @@ public class MainWindow {
 		buttonpane.add(stop);
 		buttonpane.add(reset);
 		
-		mainwindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
 		mainwindow.setVisible(true);
 	
 	}

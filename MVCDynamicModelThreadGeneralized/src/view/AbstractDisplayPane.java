@@ -4,6 +4,13 @@ import javax.swing.*;
 
 import model.*;
 
+/**
+ * A displaypane is a JPanel and is used to register an observable. Various generalized 
+ * functionality is aggregated in this class.
+ * 
+ * @author ronaldvandijk
+ * @version 01-02-2017
+ */
 public abstract class AbstractDisplayPane extends JPanel implements Observer {
 	private static final long serialVersionUID = -2767764579227738552L;
 	private static Observable observable; // in this application all Panes use the same model.
@@ -35,22 +42,37 @@ public abstract class AbstractDisplayPane extends JPanel implements Observer {
 	}
 	
 	/**
+	 * This method does two things. Firstly it registers the observable object.
+	 * In this application this is the model. It does this to be able to retrieve
+	 * information from the observable when a change in state occurs. 
+	 * Secondly it registers this observer to the observable. 
 	 * 
-	 * @param observable
+	 * @param observable the observable
 	 */
 	public void observe(Observable observable){
 		setObservable(observable);
 		getObservable().registerObserver(this);
 	}
 	
+	/**
+	 * Returns the model
+	 * @return the model
+	 */
 	public Model getModel() {
 		return (Model) getObservable();
 	}
 	
+	/**
+	 * Update the view 
+	 */
 	public void updateView() {
 		repaint();
 	}
 	
+	/**
+	 * update method that is called by an observable when there is a change
+	 * in state of the observed object.
+	 */
 	public void update(){
 		updateView();
 	}
