@@ -1,6 +1,7 @@
 package view;
 
 import java.awt.FlowLayout;
+import java.net.URL;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -23,8 +24,9 @@ public class MainWindow {
 		
 		mainwindow=new JFrame("Model View Controller/Dynamic Model with thread");
 		mainwindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		ImageIcon icon = new ImageIcon("./src/images/icon.png");
-		mainwindow.setIconImage(icon.getImage());
+		//URL iconURL = getClass().getResource("./img/icon.png"); 
+		//ImageIcon icon = new ImageIcon(iconURL);
+		//mainwindow.setIconImage(icon.getImage());
 		
 		
 		mainwindow.setSize(450, 285);
