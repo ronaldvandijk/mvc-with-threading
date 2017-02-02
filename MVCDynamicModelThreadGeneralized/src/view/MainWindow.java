@@ -24,7 +24,7 @@ public class MainWindow {
 		
 		mainwindow=new JFrame("Model View Controller/Dynamic Model with thread");
 		mainwindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		//URL iconURL = getClass().getResource("./img/icon.png"); 
+		//URL iconURL = getClass().getResource("../../img/icon.png"); 
 		//ImageIcon icon = new ImageIcon(iconURL);
 		//mainwindow.setIconImage(icon.getImage());
 		
