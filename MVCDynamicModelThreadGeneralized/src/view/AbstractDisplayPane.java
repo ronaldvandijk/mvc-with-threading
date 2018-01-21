@@ -27,7 +27,8 @@ public abstract class AbstractDisplayPane extends JPanel implements Observer {
 	/**
 	 * Defines the object this pane should observe. Note that this
 	 * method only registers an observable object. 
-	 * @param observable
+	 * 
+	 * @param observable model we would like to observe
 	 */
 	public static void setObservable(Observable observable) {
 		AbstractDisplayPane.observable = observable;
@@ -35,6 +36,7 @@ public abstract class AbstractDisplayPane extends JPanel implements Observer {
 
 	/**
 	 * Constructor for the class
+	 * 
 	 * @param observable register the object we would like to observe
 	 */
 	public AbstractDisplayPane(Observable observable) {
