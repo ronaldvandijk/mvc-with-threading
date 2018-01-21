@@ -2,7 +2,7 @@ package model;
 
 import view.Observer;
 /**
- * This is part of the observable design pattern. Here we 
+ * This interface part of the observable design pattern. Here we 
  * require that all observables are able to register an ob-
  * server, and have capability to notify all observers. 
  * 

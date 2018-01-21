@@ -3,9 +3,9 @@ package model;
  * The model is not much more than an incrementing amount. There is a class 
  * variable that holds the current (integer) amount, a setter and a getter. The 
  * main responsibility of this class is to keep track of the amount and 
- * incement it's value. The class implements the interface Runnable. 
+ * increment it's value. The class implements the interface Runnable. 
  * This means the code can run 'independent' of the mainthread and as 
- * a result the GUI of the application remains responsive during run.
+ * a result the GUI of the application remains responsive during execution.
  *   
  * @author ronaldvandijk
  * @version 01-02-2017
@@ -22,8 +22,6 @@ public class Model extends AbstractModel implements Runnable {
 	public int getAmount() {
 		return amount;
 	}
-	
-	
 	
 	/**
 	 * Sets the current amount in the model. The amount must be an

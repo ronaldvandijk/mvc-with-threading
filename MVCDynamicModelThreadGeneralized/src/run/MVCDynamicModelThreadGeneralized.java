@@ -9,8 +9,8 @@ import view.*;
  * Two displays are updated via shared model that implements a Thread.
  * 
  * The MVC uses a pull implementation of the observer pattern. Whenever 
- * changes in the model occur the observers pull the relevant information 
- * from the model.
+ * changes in the model occur the observers is notified and pulls the 
+ * relevant information from the model.
  * 
  * In this example the controller is not aware of the view, since no 
  * GUI elements need to be modified based on the state of the model.
