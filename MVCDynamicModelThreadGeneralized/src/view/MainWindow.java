@@ -1,9 +1,6 @@
 package view;
 
 import java.awt.FlowLayout;
-import java.net.URL;
-
-import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -23,12 +20,7 @@ public class MainWindow {
 	public MainWindow(AbstractDisplayPane leftpane, AbstractDisplayPane rightpane, Controller controller){
 		
 		mainwindow=new JFrame("Model View Controller/Dynamic Model with thread");
-		mainwindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		//URL iconURL = getClass().getResource("../../img/icon.png"); 
-		//ImageIcon icon = new ImageIcon(iconURL);
-		//mainwindow.setIconImage(icon.getImage());
-		
-		
+		mainwindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);		
 		mainwindow.setSize(450, 285);
 		mainwindow.setResizable(false);
 		mainwindow.setLayout(null);

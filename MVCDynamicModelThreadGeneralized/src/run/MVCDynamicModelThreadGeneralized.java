@@ -9,7 +9,7 @@ import view.*;
  * Two displays are updated via shared model that implements a Thread.
  * 
  * The MVC uses a pull implementation of the observer pattern. Whenever 
- * changes in the model occur the observers is notified and pulls the 
+ * changes in the model occur the observers are notified and pull the 
  * relevant information from the model.
  * 
  * In this example the controller is not aware of the view, since no 
@@ -25,11 +25,11 @@ public class MVCDynamicModelThreadGeneralized {
 	 */
 	public MVCDynamicModelThreadGeneralized() {
 		Model model                    = new Model();
-		Controller controller          = new Controller(model); //observe that the view(s) are not registrated to the controller.
-		AbstractDisplayPane countpane  = new CountPane(model);
-		AbstractDisplayPane piepane    = new PiePane(model);
+		Controller controller          = new Controller(model); //observe that the view(s) are not registered to the controller.
+		AbstractDisplayPane countpane  = new CountPane(model); // part of the view
+		AbstractDisplayPane piepane    = new PiePane(model); // part of the view
 		
-	    new MainWindow(countpane, piepane, controller);
+	    new MainWindow(countpane, piepane, controller); // part of the view
 		
 	}
 	

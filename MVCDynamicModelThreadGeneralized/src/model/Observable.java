@@ -4,7 +4,9 @@ import view.Observer;
 /**
  * This interface part of the observable design pattern. Here we 
  * require that all observables are able to register an ob-
- * server, and have capability to notify all observers. 
+ * server, and have capability to notify all observers.
+ * 
+ * In Layman's terms: Each observerable knows who is observing.
  * 
  * @author ronaldvandijk
  * @version 01-02-2017
